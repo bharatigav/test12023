@@ -92,7 +92,7 @@ public class tsetclass {
 	 }
 	 
 	 @AfterClass
-	 public void afterClass() {
+	 public void afterClassIE() {
 		 System.out.println("AfterClass");
 		 driver.close();
 	 }
