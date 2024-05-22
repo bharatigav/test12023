@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="regressionsuit">
+  <test thread-count="2" name="ChromeTest" parallel="tests">
+	  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="TestNG.invocationCount_Keyword"/>
+      <class name="TestNG.enabled_keyword"/>
+      <class name="TestNG.assertion"/>
+      <class name="TestNG.timeOut_keyword"/>
+      <class name="TestNG.tsetclass"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+  <test  name="FirefoxTest" >
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="TestNG.invocationCount_Keyword"/>
+      <class name="TestNG.enabled_keyword"/>
+      <class name="TestNG.assertion"/>
+      <class name="TestNG.timeOut_keyword"/>
+      <class name="TestNG.tsetclass"/>
+      
+      
+    </classes>
+  </test>
+  
+    <test name="EdgeTest" >
+  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="TestNG.invocationCount_Keyword"/>
+      <class name="TestNG.enabled_keyword"/>
+      <class name="TestNG.assertion"/>
+      <class name="TestNG.timeOut_keyword"/>
+      <class name="TestNG.tsetclass"/>
+      
+      
+    </classes>
+  </test>
+
+</suite> <!-- Suite -->
